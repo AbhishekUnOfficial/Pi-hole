@@ -1,3 +1,4 @@
-# install pihole
+# install pihole and tailscale
 
-```git clone https://github.com/AbhishekUnOfficial/Pi-hole/```
+```bash
+git clone https://github.com/AbhishekUnOfficial/Pi-hole/
