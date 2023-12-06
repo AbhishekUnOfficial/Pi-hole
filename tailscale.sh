@@ -3,9 +3,6 @@
 # Install Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
 
-# Start Tailscale
-sudo tailscale up --advertise-exit-node --accept-dns=true --ssh
-
 # Install Pi-hole
 curl -sSL https://install.pi-hole.net | bash
 
@@ -23,3 +20,6 @@ fi
 
 # Restart Unbound
 sudo systemctl restart unbound
+
+# Start Tailscale
+sudo tailscale up --advertise-exit-node --accept-dns=true --ssh
