@@ -27,4 +27,4 @@ echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.d/99-tailscale
 sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 
 # Start Tailscale
-sudo tailscale up --advertise-exit-node --accept-dns=true --ssh
+sudo tailscale up --advertise-exit-node --ssh
