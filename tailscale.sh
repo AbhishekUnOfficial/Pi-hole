@@ -14,3 +14,6 @@ sudo apt install unbound -y
 
 # Move pi-hole.conf file
 mv pi-hole.conf /etc/unbound/unbound.conf.d/
+
+# Restart unbound
+sudo service unbound restart
