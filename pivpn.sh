@@ -1,6 +1,9 @@
 # install Pi-hole
 curl -sSL https://install.pi-hole.net | bash
 
+# install unbound
+sudo apt install unbound -y
+
 # move unbound config
 if [ -f "pi-hole.conf" ]; then
     sudo mv pi-hole.conf /etc/unbound/unbound.conf.d/
@@ -10,8 +13,8 @@ else
     # Example: sudo mv /path/to/pi-hole.conf /etc/unbound/unbound.conf.d/
 fi
 
-# install unbound
-sudo apt install unbound -y
+# restart unbound
+sudo service unbound restart
 
 # install pivpn
 curl -L https://install.pivpn.io | bash
