@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Tailscale
-curl -fsSL https://tailscale.com/install.sh | sh && sudo tailscale up
+curl -fsSL https://tailscale.com/install.sh | sh
 
 # Install Pi-hole
 curl -sSL https://install.pi-hole.net | bash
