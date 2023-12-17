@@ -1,5 +1,5 @@
 # install ufw
-sudo apt install ufw && sudo ufw enable
+sudo apt install ufw -y && sudo ufw enable
 
 # install Pi-hole
 curl -sSL https://install.pi-hole.net | bash
