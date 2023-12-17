@@ -1,3 +1,6 @@
+# set timezone
+sudo timedatectl set-timezone Asia/Kolkata
+
 # install ufw
 sudo apt install ufw -y && sudo ufw enable
 
