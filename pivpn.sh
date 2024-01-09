@@ -14,9 +14,7 @@ sudo apt install unbound -y
 if [ -f "pi-hole.conf" ]; then
     sudo mv pi-hole.conf /etc/unbound/unbound.conf.d/
 else
-    echo "pi-hole.conf not found in the current directory. Please provide the correct path."
-    # If the pi-hole.conf file is in a different directory, specify the correct path in the 'mv' command.
-    # Example: sudo mv /path/to/pi-hole.conf /etc/unbound/unbound.conf.d/
+    echo "pi-hole.conf not found in the current directory."
 fi
 
 # restart unbound
